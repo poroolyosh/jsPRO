@@ -3,4 +3,4 @@
 const isChecked = true;
 const isClose = true;
 
-console.log(!isChecked || !isClose);
+console.log(!isChecked || isClose);
