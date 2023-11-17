@@ -1,19 +1,18 @@
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// const hamburger = 5;
+// const fries = 2;
 
-const personalMovieDB = {
-  count: numberOfFilms,
-  movies: {},
-  actors: {},
-  genres: {},
-  privat: false,
-};
+// if (hamburger && fries) {
+//   console.log('Я сыт!');
+// }
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-  b = prompt('На сколько оцените его?', ''),
-  c = prompt('Один из последних просмотренных фильмов?', ''),
-  d = prompt('На сколько оцените его?', '');
+const hamburger = 0;
+const fries = 0;
+const cola = 0;
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+if (hamburger || cola || fries) {
+  console.log('Все довольны!');
+} else {
+  console.log('Уходим!');
+}
 
-console.log(personalMovieDB);
+console.log(3 > 2 > 1);
