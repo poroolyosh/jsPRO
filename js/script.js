@@ -1,18 +1,12 @@
-// const hamburger = 5;
-// const fries = 2;
+'use strict';
 
-// if (hamburger && fries) {
-//   console.log('Я сыт!');
-// }
+let result = '';
+const length = 11;
 
-const hamburger = 0;
-const fries = 0;
-const cola = 0;
-
-if (hamburger || cola || fries) {
-  console.log('Все довольны!');
-} else {
-  console.log('Уходим!');
+for (let i = 1; i < length; i++) {
+  for (let j = 0; j < i; j++) {
+    result += '*';
+  }
+  result += '\n';
 }
-
-console.log(3 > 2 > 1);
+console.log(result);
