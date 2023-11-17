@@ -1,12 +1,10 @@
 'use strict';
 
-let result = '';
-const length = 11;
+const arr = [3, 5, 8, 16, 20, 23, 50];
+const result = [];
 
-for (let i = 1; i < length; i++) {
-  for (let j = 0; j < i; j++) {
-    result += '*';
-  }
-  result += '\n';
+for (let i = 0; i < arr.length; i++) {
+  result[i] = arr[i];
 }
+
 console.log(result);
