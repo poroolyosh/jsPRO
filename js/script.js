@@ -1,14 +1,18 @@
 'use strict';
 
-let salaries = {
-  John: 300,
-  Ann: 160,
-  Pete: 130
+let user = {
+  name: "John",
+  age: 30
 };
 
-let sum = 0;
-for (let key in salaries) {
-  sum += salaries[key];
-}
+let clone = user // новый пустой объект
 
-alert(sum); // 390
+// давайте скопируем все свойства user в него
+//for (let key in user) {
+//  clone[key] = user[key];
+//}
+
+// теперь clone это полностью независимый объект с тем же содержимым
+clone.name = "Pete"; // изменим в нём данные
+
+alert( user.name ); // все ещё John в первоначальном объекте
